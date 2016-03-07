@@ -15,7 +15,8 @@
 
 body {
 	background: #efefef;
-	font: 16px Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
 	line-height: 1.5;
 	padding: 1.5rem 0 3rem;
 	color: #333;
@@ -203,7 +204,50 @@ body {
 }
 
 @media print {
-	background: #fff;
+
+	html,
+	body {
+		background: #fff;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		line-height: 1.2;
+	}
+
+	.resume {
+		max-width: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.header {
+		padding: 0 0 0.5rem;
+		margin: 0 0 0.5rem;
+		border-bottom: 1px #ccc solid;
+	}
+
+	.header__name {
+		font-size: 1.75rem;
+	}
+
+	.header__title {
+		font-size: 1.2rem;
+	}
+
+	.section__title {
+		font-size: 1rem;
+	}
+
+	.section__subtitle {
+		font-size: 0.9rem;
+	}
+
+	.section__summary,
+	.section__detail {
+		font-size: 0.8rem;
+	}
+
+
 }
 
 	</style>
@@ -260,11 +304,9 @@ body {
 								</span>
 							</div>
 
-							<div class="section__summary">
-								<p>One of two front end developers on team that implemented a new, fully responsive, isomorphic React-based version of the site with Flux-like patterns via Backbone models.</p>
-							</div>
 							<ul class="section__list">
 								<li class="section__item">Head of Front-end Guild</li>
+								<li class="section__item">On small team that rebuilt new site with React</li>
 								<li class="section__item">Developed javascript-less navigation</li>
 								<li class="section__item">Custom developer metrics / workflow tooling</li>
 								<li class="section__item">Modular home page with multiple templates</li>
@@ -289,10 +331,8 @@ body {
 								</span>
 							</div>
 
-							<div class="section__summary">
-								<p>Lead developer of US branch. Crafted custom solutions to problems that fell outside framework of company&#x27;s tooling.</p>
-							</div>
 							<ul class="section__list">
+								<li class="section__item">Lead developer of US branch</li>
 								<li class="section__item">Nokia/Microsoft custom JS web apps</li>
 								<li class="section__item">UFC 175 HTML5 Warpaint painting microsite</li>
 								<li class="section__item">MLLNNL regenerative social wall</li>
@@ -317,10 +357,8 @@ body {
 								</span>
 							</div>
 
-							<div class="section__summary">
-								<p>Full-stack development using a combination of PHP, MySQL and front-end tech.</p>
-							</div>
 							<ul class="section__list">
+								<li class="section__item">Full-stack development w/ PHP, MySQL, Javascript</li>
 								<li class="section__item">Ann Taylor, Vera Wang, Victoria&#x27;s Secret EPKs</li>
 								<li class="section__item">MAC and Este Lauder inventory systems</li>
 								<li class="section__item">Fulfillment house flash game</li>
@@ -345,9 +383,6 @@ body {
 								</span>
 							</div>
 
-							<div class="section__summary">
-								<p>Freelance work that ran the gamut from designing album layouts to running a successful music site/label that hosted some of the free downloadable albums.</p>
-							</div>
 							<ul class="section__list">
 								<li class="section__item">Pink Couch Sessions w/ ~60k views/month</li>
 								<li class="section__item">Doghouse and Second Nature Records custom CMS</li>
