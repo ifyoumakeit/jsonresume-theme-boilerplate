@@ -16,9 +16,14 @@
 body {
 	background: #efefef;
 	font: 16px Arial, Helvetica, sans-serif;
-	line-height: 1.4;
-	margin: 1.5rem 0;
+	line-height: 1.5;
+	padding: 1.5rem 0 3rem;
 	color: #333;
+	border-color: #16a085;
+	border-style: solid;
+	border-width: 0 10px;
+
+  // Font smoothing
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -78,14 +83,16 @@ body {
 	border: 1px #ddd solid;
 	padding: 1rem;
 	transform: scale(1) translateZ(0);
-	transition: 0.25s transform, box-shadow;
+	transition: 0.25s all;
 	background: #efefef;
 }
 
 .section__body:hover {
+	border-color: #ccc;
 	box-shadow: inset 0 0 0 1px #fff, 0 4px 2px -2px #ddd;
-	transform: scale(1.025) translateZ(1px);
+	transform: scale(1.01) translateZ(1px);
 	z-index: 1;
+	color: #111;
 }
 
 .section__label {
@@ -103,7 +110,7 @@ body {
 }
 
 .section__detail {
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.5rem;
 }
 
 .section__list {
@@ -163,7 +170,7 @@ body {
 		display: inline-block;
 		padding: 0 0.5rem;
 		margin: 0 -0.25rem -2.5rem 0;
-		font-family: georgia;
+		font-family: Georgia;
 		line-height: 1;
 	}
 
@@ -219,7 +226,7 @@ body {
 						<h3 class="section__title">Summary</h3>
 
 						<div class="section__summary">
-							Well-versed in a number of programming languages, with a focus on Javascript, HTML5 and SCSS/CSS.<br /><br /> My focus is on performance, accessibility and developing modular reusable components that conform to specification.
+							My focus is on performance, accessibility and developing modular reusable components that conform to specification.<br /><br />Well-versed in a number of programming languages, with a focus on Javascript, HTML5 and SCSS/CSS.
 						</div>
 					</div>
 				</section>
@@ -237,7 +244,7 @@ body {
 						<div class="section__subsection">
 
 							<h4 class="section__subtitle">
-								Mid-level Front-end Developer
+								Front-end Developer
 							</h4>
 
 							<h5 class="section__subtitle">
@@ -254,18 +261,19 @@ body {
 							</div>
 
 							<div class="section__summary">
-								<p>Reimplemented a fully responsive, isomorphic React-based version of the site with Flux-like patterns via Backbone models.</p>
+								<p>One of two front end developers on team that implemented a new, fully responsive, isomorphic React-based version of the site with Flux-like patterns via Backbone models.</p>
 							</div>
 							<ul class="section__list">
+								<li class="section__item">Head of Front-end Guild</li>
 								<li class="section__item">Developed javascript-less navigation</li>
-								<li class="section__item">Custom metrics / workflow tooling</li>
-								<li class="section__item">Created a module system for homepage changes</li>
+								<li class="section__item">Custom developer metrics / workflow tooling</li>
+								<li class="section__item">Modular home page with multiple templates</li>
 							</ul>
 						</div>
 						<div class="section__subsection">
 
 							<h4 class="section__subtitle">
-								Front-end Developer
+								Client Services Engineer
 							</h4>
 
 							<h5 class="section__subtitle">
@@ -282,8 +290,13 @@ body {
 							</div>
 
 							<div class="section__summary">
-								<p>Build custom Javascript web apps for clients that range from HTML5 Canvas painting apps to social walls that feature content from all networks w/ custom interactions.</p>
+								<p>Lead developer of US branch. Crafted custom solutions to problems that fell outside framework of company&#x27;s tooling.</p>
 							</div>
+							<ul class="section__list">
+								<li class="section__item">Nokia/Microsoft custom JS web apps</li>
+								<li class="section__item">UFC 175 HTML5 Warpaint painting microsite</li>
+								<li class="section__item">MLLNNL regenerative social wall</li>
+							</ul>
 						</div>
 						<div class="section__subsection">
 
@@ -304,9 +317,13 @@ body {
 								</span>
 							</div>
 
+							<div class="section__summary">
+								<p>Full-stack development using a combination of PHP, MySQL and front-end tech.</p>
+							</div>
 							<ul class="section__list">
-								<li class="section__item">Worked on a range of different websites, apps and EPKs.</li>
-								<li class="section__item">Created inventory systems w/ PHP and MySQL.</li>
+								<li class="section__item">Ann Taylor, Vera Wang, Victoria&#x27;s Secret EPKs</li>
+								<li class="section__item">MAC and Este Lauder inventory systems</li>
+								<li class="section__item">Fulfillment house flash game</li>
 							</ul>
 						</div>
 						<div class="section__subsection">
@@ -315,6 +332,9 @@ body {
 								Freelance Developer / Designer
 							</h4>
 
+							<h5 class="section__subtitle">
+								<a class="section__link" target="_blank" href="http://ifyoumakeit.com">If You Make It</a>
+							</h5>
 
 							<div class="section__detail">
 								<span class="section__date">
@@ -326,12 +346,12 @@ body {
 							</div>
 
 							<div class="section__summary">
-								<p>Ran </p>
+								<p>Freelance work that ran the gamut from designing album layouts to running a successful music site/label that hosted some of the free downloadable albums.</p>
 							</div>
 							<ul class="section__list">
-								<li class="section__item">Over 60k views for</li>
-								<li class="section__item">Developed a CMS w/ PHP and MySQL.</li>
-								<li class="section__item">Created e-commerce solutions for print shops.</li>
+								<li class="section__item">Pink Couch Sessions w/ ~60k views/month</li>
+								<li class="section__item">Doghouse and Second Nature Records custom CMS</li>
+								<li class="section__item">Night Owls Printshop custom CMS and order tracking</li>
 							</ul>
 						</div>
 
@@ -347,7 +367,7 @@ body {
 
 						<h3 class="section__title">Contact</h3>
 
-						<div class="section__details">
+						<div class="section__detail">
 							<label class="section__label">Website</label>
 							<a class="section__link" href="http://davegarwacke.com" target="_blank">
 								http://davegarwacke.com
@@ -356,21 +376,20 @@ body {
 
 						<div class="section__detail">
 							<label class="section__label">Email</label>
-							richard.hendriks@mail.com
+							dave.garwacke@mail.com
 						</div>
 
 						<div class="section__detail">
 							<label class="section__label">Phone</label>
-							(912) 555-4321
+							(917) 348-9048
 						</div>
 
 						<div class="section__detail">
 							<label class="section__label">Address</label>
-							2712 Broadway St<br />
-							San Francisco<br />
-							California<br />
-							CA 94115<br />
-							US<br />
+							121 Jewel Street<br />
+							Brooklyn
+							 NY<br />
+							11222
 						</div>
 
 					</div>
@@ -427,6 +446,8 @@ body {
 								<li class="section__item">React</li>
 								<li class="section__item">Backbone</li>
 								<li class="section__item">Handlebars</li>
+								<li class="section__item">ES6 / Babel</li>
+								<li class="section__item">Node</li>
 							</ul>
 						</div>
 						<div class="section__subsection">
@@ -439,7 +460,6 @@ body {
 							<ul class="section__list">
 								<li class="section__item">HTML4/5</li>
 								<li class="section__item">Accessibility</li>
-								<li class="section__item">Jade</li>
 							</ul>
 						</div>
 						<div class="section__subsection">
@@ -459,38 +479,8 @@ body {
 					</div>
 				</section>
 
-				<section class="section section--languages">
-					<div class="section__body">
 
-						<h3 class="section__title">Languages</h3>
 
-						<div class="section__tags">
-							<div class="section__tag">
-							</div>
-						</div>
-
-					</div>
-				</section>
-
-				<section class="section section--interests">
-					<div class="section__body">
-
-						<h3 class="section__title">Interests</h3>
-
-						<div class="section__subsection">
-						</div>
-
-					</div>
-				</section>
-
-				<section class="section section--references">
-					<div class="section__body">
-
-						<h3 class="section__title">References</h3>
-						<div class="section__subsection">
-						</div>
-					</div>
-				</section>
 
 			</aside>
 

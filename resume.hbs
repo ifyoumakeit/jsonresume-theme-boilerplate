@@ -206,7 +206,7 @@
 						<h3 class="section__title">Contact</h3>
 
 						{{#if basics.website}}
-						<div class="section__details">
+						<div class="section__detail">
 							<label class="section__label">Website</label>
 							<a class="section__link" href="{{basics.website}}" target="_blank">
 								{{basics.website}}
@@ -233,10 +233,9 @@
 						<div class="section__detail">
 							<label class="section__label">Address</label>
 							{{#if address}}{{address}}<br />{{/if}}
-							{{#if city}}{{city}}<br />{{/if}}
-							{{#if region}}{{region}}<br />{{/if}}
-							{{#if postalCode}}{{postalCode}}<br />{{/if}}
-							{{#if countryCode}}{{countryCode}}<br />{{/if}}
+							{{#if city}}{{city}}{{/if}}
+							{{#if region}} {{region}}<br />{{/if}}
+							{{#if postalCode}}{{postalCode}}{{/if}}
 						</div>
 						{{/if}}
 						{{/basics.location}}
